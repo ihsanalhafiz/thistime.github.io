@@ -6,4 +6,5 @@ Simple GitHub Pages site template.
 Open `index.html` in your browser.
 
 ## Deploy on GitHub Pages
-For a repository named `thistime.github.io`, GitHub serves the site from the root of the default branch automatically.
+Enable GitHub Pages in repository settings to publish from the default branch root.
+User/organization sites use a `username.github.io` repository name, while project sites can use any repository name.
