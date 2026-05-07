@@ -218,30 +218,6 @@ p {
   min-height: 560px;
 }
 
-.orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(2px);
-}
-
-.orb-one {
-  top: 9%;
-  right: 5%;
-  width: 9rem;
-  height: 9rem;
-  background: rgba(245, 198, 111, 0.55);
-}
-
-.orb-two {
-  bottom: 9%;
-  left: 3%;
-  width: 12rem;
-  height: 12rem;
-  background: rgba(159, 183, 167, 0.45);
-}
-
-.device-card,
-.phone-card,
 .pain-card,
 .app-card,
 .visual-panel,
@@ -252,121 +228,52 @@ p {
   backdrop-filter: blur(16px);
 }
 
-.device-card {
-  position: absolute;
-  top: 8%;
-  right: 3%;
-  width: min(100%, 440px);
-  padding: 1.3rem;
-  border-radius: 2.1rem;
-  transform: rotate(-2deg);
-}
-
-.device-topbar {
-  display: flex;
-  gap: 0.45rem;
-  margin-bottom: 2.6rem;
-}
-
-.device-topbar span {
-  width: 0.62rem;
-  height: 0.62rem;
-  border-radius: 50%;
-  background: var(--line);
-}
-
-.deadline-label {
-  color: var(--moss);
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.countdown {
-  display: grid;
-  grid-template-columns: repeat(3, auto auto);
-  align-items: end;
-  gap: 0.35rem 0.5rem;
-  margin: 1rem 0 1.4rem;
-}
-
-.countdown span {
-  font-size: clamp(3.1rem, 8vw, 5.8rem);
-  font-weight: 800;
-  line-height: 0.9;
-  letter-spacing: -0.08em;
-}
-
-.countdown small {
-  padding-bottom: 0.45rem;
-  color: var(--muted);
-  font-weight: 800;
-}
-
-.progress-shell {
+.product-photo-card {
   overflow: hidden;
-  height: 0.7rem;
-  border-radius: 999px;
-  background: #eee7dc;
-}
-
-.progress-bar {
-  width: 67%;
-  height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, var(--moss), var(--amber));
-}
-
-.device-card p {
-  margin: 1rem 0 0;
-}
-
-.phone-card {
-  position: absolute;
-  right: 0;
-  bottom: 6%;
-  width: 210px;
-  padding: 1rem;
+  margin: 0;
+  border: 1px solid rgba(232, 223, 208, 0.92);
   border-radius: 2rem;
-  transform: rotate(5deg);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
 }
-
-.phone-notch {
-  width: 4.2rem;
-  height: 0.45rem;
-  margin: 0 auto 1.2rem;
-  border-radius: 999px;
-  background: var(--ink);
+.product-photo-card img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-
-.phone-header {
-  margin-bottom: 1rem;
+.product-photo-card figcaption {
+  display: grid;
+  gap: 0.3rem;
+  padding: 1rem 1.15rem 1.15rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.product-photo-card figcaption span {
+  color: var(--ink);
   font-weight: 800;
 }
 
-.mini-task {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.65rem;
-  padding: 0.72rem;
-  border-radius: 1rem;
-  background: #f7f1e7;
-  color: var(--muted);
-  font-size: 0.82rem;
-  font-weight: 700;
+.hero-visual.product-photo-card {
+  position: relative;
+  min-height: auto;
+  transform: rotate(1.5deg);
 }
 
-.mini-task.active {
-  background: var(--ink);
-  color: var(--paper);
-}
-
-.mini-task span {
-  width: 0.55rem;
-  height: 0.55rem;
-  border-radius: 50%;
-  background: var(--clay);
+.hero-visual.product-photo-card::before {
+  content: "Live product concept";
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(251, 248, 241, 0.82);
+  color: var(--moss);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
 }
 
 .problem,
@@ -507,6 +414,63 @@ p {
   font-weight: 800;
 }
 
+
+.bluetooth {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.bluetooth-photo {
+  transform: rotate(-1deg);
+}
+
+.bluetooth-copy p {
+  max-width: 620px;
+}
+
+.setup-steps {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: setup;
+}
+
+.setup-steps li {
+  position: relative;
+  padding: 1rem 1rem 1rem 3.35rem;
+  border: 1px solid var(--line);
+  border-radius: 1.1rem;
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.setup-steps li::before {
+  counter-increment: setup;
+  content: counter(setup);
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.setup-steps strong {
+  color: var(--ink);
+}
+
 .quote-band {
   padding: 4rem 0;
 }
@@ -601,6 +565,7 @@ input {
   .hero,
   .solution,
   .app,
+  .bluetooth,
   .waitlist {
     grid-template-columns: 1fr;
   }
@@ -640,22 +605,11 @@ input {
     min-height: 430px;
   }
 
-  .device-card {
-    right: 0;
+  .hero-visual.product-photo-card,
+  .bluetooth-photo {
     transform: none;
   }
 
-  .phone-card {
-    width: 180px;
-  }
-
-  .countdown {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .countdown small {
-    display: none;
-  }
 
   .input-row,
   .site-footer {
