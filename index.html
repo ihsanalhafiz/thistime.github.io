@@ -3,16 +3,214 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>thistime.github.io</title>
+    <meta
+      name="description"
+      content="ThisTime pairs a focused desk countdown device with a mobile planning app so deadlines, tasks, and important moments stay visible."
+    />
+    <title>ThisTime — Make every deadline visible</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="container">
-      <h1>Welcome to thistime.github.io</h1>
-      <p>This is a simple GitHub Pages template.</p>
-      <a href="https://github.com/ihsanalhafiz/thistime.github.io" target="_blank" rel="noopener noreferrer">
-        View repository
+    <header class="site-header">
+      <a class="logo" href="#hero" aria-label="ThisTime home">
+        <span class="logo-mark">T</span>
+        <span>ThisTime</span>
       </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#app">App</a>
+        <a href="#bluetooth">Bluetooth</a>
+        <a href="#waitlist">Waitlist</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">A calmer way to respect your time</p>
+          <h1>Make every important deadline impossible to ignore.</h1>
+          <p class="hero-text">
+            ThisTime is a minimalist desk countdown display and companion mobile app for people
+            who fight procrastination, lose track of priorities, or need a gentle reminder that
+            time is always moving.
+          </p>
+          <div class="cta-row">
+            <a class="button primary" href="#waitlist">Join the early list</a>
+            <a class="button secondary" href="#solution">See how it works</a>
+          </div>
+          <div class="trust-row" aria-label="Product focus areas">
+            <span>Deadline awareness</span>
+            <span>Task focus</span>
+            <span>Phone sync</span>
+          </div>
+        </div>
+
+        <figure class="hero-visual product-photo-card">
+          <img
+            src="assets/images/thistime-desk-display.png"
+            alt="ThisTime desk countdown display showing a product launch deadline beside a laptop, notebook, books, plant, and coffee."
+            width="2048"
+            height="1536"
+          />
+          <figcaption>
+            <span>Desk-first focus</span>
+            A calm e-ink style display keeps the next deadline visible while your workspace stays minimal.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="problem section" id="problem">
+        <div class="section-heading">
+          <p class="eyebrow">The problem</p>
+          <h2>To-do lists are easy to hide. Time is not.</h2>
+          <p>
+            Most productivity tools live behind notifications, tabs, and habits you must already
+            have. ThisTime brings your most important commitment into your physical workspace,
+            where it quietly turns intention into visible urgency.
+          </p>
+        </div>
+        <div class="pain-grid">
+          <article class="pain-card">
+            <div class="icon">✦</div>
+            <h3>Procrastination feels abstract</h3>
+            <p>When a deadline is “later,” the brain delays. A visible countdown makes the cost of waiting concrete.</p>
+          </article>
+          <article class="pain-card">
+            <div class="icon">◷</div>
+            <h3>Important tasks get buried</h3>
+            <p>Calendar alerts and task apps compete with everything else on your phone. Your desk display has one job.</p>
+          </article>
+          <article class="pain-card">
+            <div class="icon">✓</div>
+            <h3>Planning needs follow-through</h3>
+            <p>Set goals in the app, then let the device keep reminding you without another distracting screen.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="solution section" id="solution">
+        <div class="visual-panel">
+          <div class="timeline-illustration" aria-hidden="true">
+            <div class="timeline-line"></div>
+            <div class="timeline-dot dot-start"><span>Set</span></div>
+            <div class="timeline-dot dot-focus"><span>Focus</span></div>
+            <div class="timeline-dot dot-finish"><span>Finish</span></div>
+            <div class="floating-note note-one">3 days left</div>
+            <div class="floating-note note-two">Priority: high</div>
+          </div>
+        </div>
+        <div class="solution-copy">
+          <p class="eyebrow">The solution</p>
+          <h2>A small device that turns time into a daily ritual.</h2>
+          <p>
+            Place ThisTime on your desk, choose the deadline that matters, and let the countdown
+            become part of your environment. It is not another noisy gadget—it is a focused signal
+            designed to help you start sooner, decide faster, and finish with less panic.
+          </p>
+          <ul class="feature-list">
+            <li><strong>Always-visible countdowns</strong> for exams, launches, invoices, events, and personal goals.</li>
+            <li><strong>Gentle deadline reminders</strong> that nudge you before the pressure becomes overwhelming.</li>
+            <li><strong>Minimal desk presence</strong> with a calm display built for focus instead of distraction.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="app section" id="app">
+        <div class="app-copy">
+          <p class="eyebrow">Companion app</p>
+          <h2>Configure the device. Organize the day. Sync what matters.</h2>
+          <p>
+            The ThisTime mobile app helps you create countdowns, manage task deadlines, and send
+            the most important item to the physical display. Future integrations can connect your
+            existing calendar and to-do workflow so you do not need to rebuild your system from scratch.
+          </p>
+        </div>
+        <div class="app-grid">
+          <article class="app-card">
+            <span>01</span>
+            <h3>Create a deadline</h3>
+            <p>Name the event, choose the due date, and define how early you want to be reminded.</p>
+          </article>
+          <article class="app-card">
+            <span>02</span>
+            <h3>Pick the focus</h3>
+            <p>Select the one task or moment that deserves your attention right now.</p>
+          </article>
+          <article class="app-card">
+            <span>03</span>
+            <h3>Send to display</h3>
+            <p>Sync the countdown to your desk device and let it become a quiet accountability partner.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="bluetooth section" id="bluetooth">
+        <figure class="bluetooth-photo product-photo-card">
+          <img
+            src="assets/images/thistime-bluetooth-app.png"
+            alt="ThisTime mobile app connected to the desk countdown display, sending a product launch deadline and checklist over Bluetooth."
+            width="2048"
+            height="1152"
+            loading="lazy"
+          />
+          <figcaption>
+            <span>Bluetooth setup</span>
+            Pair once, then send deadlines, reminders, priority, and checklist changes straight from your phone to the display.
+          </figcaption>
+        </figure>
+        <div class="bluetooth-copy">
+          <p class="eyebrow">Simple Bluetooth pairing</p>
+          <h2>Set it up from your phone in minutes.</h2>
+          <p>
+            Open the ThisTime app, turn on the desk display, and connect over Bluetooth. Once paired,
+            your phone becomes the control center for choosing the active countdown, reminders,
+            checklist items, priority level, and display preferences.
+          </p>
+          <ol class="setup-steps">
+            <li><strong>Power on ThisTime</strong> and keep it near your phone during first-time setup.</li>
+            <li><strong>Open the mobile app</strong>, tap “Add display,” and select your device from the Bluetooth list.</li>
+            <li><strong>Create or choose a deadline</strong>, then tap “Send to display” to sync the countdown instantly.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="quote-band section" aria-label="Persuasive brand statement">
+        <p>
+          “You do not need more pressure. You need a clear, beautiful reminder of what your time is for.”
+        </p>
+      </section>
+
+      <section class="waitlist section" id="waitlist">
+        <div>
+          <p class="eyebrow">Coming soon</p>
+          <h2>Build your next deadline with intention.</h2>
+          <p>
+            We are shaping ThisTime with students, founders, makers, freelancers, and anyone who
+            wants to stop letting important work disappear into “someday.” Join the early list for
+            prototype updates, product research, and launch news.
+          </p>
+        </div>
+        <form class="waitlist-form" action="mailto:hello@thistime.github.io" method="post" enctype="text/plain">
+          <label for="email">Email address</label>
+          <div class="input-row">
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <button type="submit">Notify me</button>
+          </div>
+          <small>No spam—only meaningful progress updates.</small>
+        </form>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <p>© 2026 ThisTime. Designed for people who are ready to start before time runs out.</p>
+      <a href="#hero">Back to top</a>
+    </footer>
   </body>
 </html>
